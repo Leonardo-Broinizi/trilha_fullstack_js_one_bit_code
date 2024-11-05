@@ -1,0 +1,20 @@
+@charset "UTF-8"; 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+    display: inline-block;
+    background-color: #fff;
+    border-width:4px;
+    border-color: #00f;
+    border-style: solid;
+}
+
