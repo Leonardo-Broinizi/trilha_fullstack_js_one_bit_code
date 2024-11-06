@@ -1,0 +1,38 @@
+/* inline não quebra a linha; tem sua largura to tamanho mínimo necessário para o elemento; não aceita margin e top nem margin-bottom, apenas margin-left e margin-right, e o mesmo se aplica ao padding. */
+.inline {
+    display: inline;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+
+/* block: quebra a linha; tem sua largura ocupando todo o espaço disponível; aceita margin e padding em todas as direções  */
+.block {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* inline-block: não quebra a linha; tem sua largura ocupando o espaço mínimo disponível; aceita margin e padding em todas as direções */
+.inline-block {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

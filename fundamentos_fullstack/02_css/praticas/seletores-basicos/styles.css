@@ -1,0 +1,80 @@
+/* Seletor universal */
+/* Aplicará os estilos a todos os elementos de todas as tags */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Seletor de tag */
+/* Seletor básico, se aplicando a todos os elementos dentro da(s) tag(s) selecionada(s) */
+/* Obs.: com o uso de vírgula podemos sselecionar mais de uma tag */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Seletor de elementos aninhados */
+/* Selecionará todas a(s) tag(s) especificadas que estiverem dentro da tag "container", mesmo se estiverem dentro de tags que estejam dentro da tag container */
+nav a {
+    color: #27ae60;
+}
+
+/* Seletor de filhos */
+/* Selecionará todas as tags "filhas", ou seja, todas as tags especificadas que estiverem diretamente dentro da tag container, não contando com as tags que estiverem dentro de outras tags no container */
+nav > a {
+    display: block;
+    color: #f5a623;
+    padding: 10px;
+}
+
+/* Seletor de classe */
+/* Seleciona todas as tags que estiverem com a classe indicada */
+.laranja {
+    color: #f5a623;
+}
+.verde {
+    color: #27ae60;
+}
+
+/* Seletor de id */
+/* Parecida com a seleção de classe, mas o id não deve ser usado em mais de uma tag por página */
+#secao-principal {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ideia que eu tive durante a aula (uma descoberta para mim rs): se eu selecionar uma tag qualquer e usar um seletor universal após uma seleção de elementos aninhados ou seleção de filhos, as configurações serão feitas "universalmente dentro daquela escolha", ou seja, individualmente para todas aquelas tags dentro da minha seleção. Já precisei de algo do tipo e não consegui por não saber como fazer */
+#secao-principal > * {
+    padding: 20px;
+}
+
+/* Combinação de seleção */
+/* Logo após minha "descoberta" acima, o professor Isaac começou a falar sobre combinação de seleções e usou de exemplo justamente o que eu havia feito rsrsrs */
+
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Seletor de sequência */
+/* Seleciona apenas o elemento imediatemente posterior ao elemento indicado */
+input + input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 + p {
+    margin-top: 30px;
+}
+
+/* Seletor de propriedade */
+/* Selecionará os elementos que possuam as propriedaes indicadas. A propriedade também pode ser combinada com seu valor específico.  */
+input[name] {
+    background-color: #f5a623;
+}
+
+input[name="password"] {
+    background-color: #27ae60;
+}
