@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body > h1 {
+            color: #0f0;
+        }
+        h1 {
+            font-family: serif;
+            color: #f00;
+        }
+        div {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo véio!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ullam error hic.</p>
+    <div>botão</div>
+</body>
+</html>
