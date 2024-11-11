@@ -2,14 +2,46 @@
     --cor-principal: #3c59e7;
     --cor-claro: #eaeaea;
     --cor-escuro: #232323;
-    --preenchimento-pq: 1rem;
+    --preenchimento-pq: 0.25rem 1rem;
     --preenchimento-md: 2rem;
     --preenchimento-gd: 4rem; /* Aqui no elemento :root (raíz) as variáveis tem escopo global, ou seja, podem ser aplicadas em qualquer elemento possível do site. */
 }
 
 header {
-    --cor-do-leo: #45e3a2; /* Aqui, dentro de reader, temos um exemplo de uma variável criada em um seletor específico, o que restringirá seu escopo a esse seletor e aos elementos dentro dele.*/
+    background-color: var(--cor-escuro);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pq);
+}
+
+section {
+    background-color: var(--cor-claro);
+    padding: var(--preenchimento-md);
+}
+
+div {
+    background-color: var(--cor-principal);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pq);
+}
+
+.red-box {
+    --cor-principal: #f64348; /* Mudança do valor da variável apenas para este seletor, a variável global não foi alterada e nos outros seletores permanecerá com o valor original */
+}
+
+
+
+
+/* header {  /* alguns testes *
+    --cor-do-leo: #45e3a2;  /* Aqui, dentro de reader, temos um exemplo de uma variável criada em um seletor específico, o que restringirá seu escopo a esse seletor e aos elementos dentro dele.*/ /*
     background-color: var(--cor-escuro);
     color: var(--cor-claro);
     border: 24px solid var(--cor-do-leo);
 }
+
+header > h1 {
+    text-shadow: 1px 2px 2px var(--cor-do-leo);
+}
+
+section > h2 {
+    color: var(--cor-principal);
+} */
