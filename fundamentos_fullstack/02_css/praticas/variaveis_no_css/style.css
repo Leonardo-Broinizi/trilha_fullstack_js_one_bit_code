@@ -1,0 +1,15 @@
+:root {
+    --cor-principal: #3c59e7;
+    --cor-claro: #eaeaea;
+    --cor-escuro: #232323;
+    --preenchimento-pq: 1rem;
+    --preenchimento-md: 2rem;
+    --preenchimento-gd: 4rem; /* Aqui no elemento :root (raíz) as variáveis tem escopo global, ou seja, podem ser aplicadas em qualquer elemento possível do site. */
+}
+
+header {
+    --cor-do-leo: #45e3a2; /* Aqui, dentro de reader, temos um exemplo de uma variável criada em um seletor específico, o que restringirá seu escopo a esse seletor e aos elementos dentro dele.*/
+    background-color: var(--cor-escuro);
+    color: var(--cor-claro);
+    border: 24px solid var(--cor-do-leo);
+}
