@@ -4,5 +4,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+header {
+    background-image: url('../image/pexels-narda-yescas-1566837.jpg');
+    background-size: 100rem;
+    background-position: top;
+    height: 35rem;
+}
+header > nav {
+    background-color: #232323;
+    text-align: center;
+}
+header > nav > a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1.3rem;
+}
+header > nav > a:hover {
+    text-decoration: underline;
+}
+header > .welcome  {
+    text-align: center;
+}
+header > .welcome > h1 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: #fff;
+}
+header > .welcome > p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+header > div.welcome > div.view_menu > a {
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(255, 177, 10);
+    color: #000;
+    font-weight: 500;
+}
+header > div.welcome > div.view_menu > a:hover {
+    background-color: rgb(212, 148, 10);
+    color: #fff;
+}
+main > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2.5rem;
+}
+section.menu > div.menu__boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    
+}
+section.menu > div.menu__boxes > div.menu__box {
+    border: 2px solid;
+    
+}
