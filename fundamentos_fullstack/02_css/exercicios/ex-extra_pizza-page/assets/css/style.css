@@ -8,7 +8,11 @@
 }
 html {
     scroll-behavior: smooth;
-  }
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
 header {
     background-image: url('../image/pexels-narda-yescas-1566837.jpg');
     background-size: 100rem;
@@ -50,27 +54,69 @@ header > div.welcome > div.view_menu > a {
     margin-top: 10px;
     display: inline-block;
     text-decoration: none;
-    background-color: rgb(255, 177, 10);
+    background-color: rgb(212, 150, 14);
     color: #000;
     font-weight: 500;
 }
 header > div.welcome > div.view_menu > a:hover {
-    background-color: rgb(212, 148, 10);
+    background-color: rgb(248, 177, 25);
     color: #fff;
 }
 main > h2 {
-    text-align: center;
-    font-size: 2.5rem;
     margin: 2.5rem;
 }
 section.menu > div.menu__boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    gap: 20px;
-    
+    gap: 1.8rem;
+    max-width: 75rem;
+    margin: auto;
+    padding: 0 1.3rem;
 }
-section.menu > div.menu__boxes > div.menu__box {
-    border: 2px solid;
-    
+.menu__boxes > a {
+    text-decoration: none;
+    color: black;
+}
+.menu__box {
+    background-color: #ccc;
+    border-radius: 0.5rem;
+}
+.menu__pizza-img {
+    height: 15rem;
+    background-image: url(../image/pexels-engin-akyurt-2260208.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.menu__pizza-name {
+    font-weight: 600;
+}
+.menu__pizza-name, .menu__pizza-ingredients {
+    margin: 1rem;
+}
+.menu__pizza-ingredients {
+    padding-bottom: 1rem;
+}
+.aboutUs {
+    background-image: url(../image/pexels-eneida-nieves-905847.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 12rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutUs > h2 {
+    color: #fff;
+    margin: 2rem;
+}
+.aboutUs > p {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.contact {
+    text-align: center;
 }
